@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Sentinels 4.2||4.4</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top">Sentinels</a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Team</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image-->
+                <img class="masthead-avatar mb-5" src="data:image/png;base64,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" alt="..." />
+                <!-- Masthead Heading-->
+                <h1 class="masthead-heading text-uppercase mb-0">Welcome to Sentinels!</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Masthead Subheading-->
+                <p class="masthead-subheading font-weight-light mb-0">Gamers - Community - Family</p>
+            </div>
+        </header>
+        <!-- Portfolio Section-->
+        <section class="page-section portfolio" id="portfolio">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Our Team</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 1-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="https://media.discordapp.net/attachments/875648756954046464/875879370923855892/TenZ.png?width=629&height=354" alt="Tenz" />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="https://media.discordapp.net/attachments/875648756954046464/875649120554090526/ego.png?width=629&height=354" alt="Coro" />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 3-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="https://media.discordapp.net/attachments/875648756954046464/875649076148989962/Coro.png?width=629&height=354" alt="Ego" />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 4-->
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="https://media.discordapp.net/attachments/875648756954046464/875787770067570698/Jafar.png?width=567&height=567" alt="Jafar" />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 5-->
+                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="https://media.discordapp.net/attachments/875648756954046464/875649000995422208/Alphy.png?width=351&height=567" alt="Alphy" />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 6-->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="https://media.discordapp.net/attachments/875648756954046464/875993976400912414/Me_fr.png?width=629&height=354" alt="Chey" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section-->
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <div class="row">
+                    <div class="col-lg-4 ms-auto"><p class="lead">We are a volleyball 4.2 || 4.4 community who's trying to make a name for themselves in the community.</p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead">We embrace every type of person, we do not mind diversity and we don't get political in the server : )</p></div>
+                </div>
+                <!-- About Section Button-->
+                <div class="text-center mt-4">
+                    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
+                        <i class="fas fa-users -2"></i>
+                        Join our Server!
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <!-- Contact Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact us!!</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Contact Section Form-->
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-7">
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- * * SB Forms Contact Form * *-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- This form is pre-integrated with SB Forms.-->
+                        <!-- To make this form functional, sign up at-->
+                        <!-- https://startbootstrap.com/solution/contact-forms-->
+                        <!-- to get an API token!-->
+                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            <!-- Name input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                <label for="name">Full name</label>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                            </div>
+                            <!-- Email address input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <label for="email">Email address</label>
+                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            </div>
+                            <!-- Phone number input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                <label for="phone">Phone number</label>
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                            </div>
+                            <!-- Message input-->
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                <label for="message">Message</label>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                            </div>
+                            <!-- Submit success message-->
+                            <!---->
+                            <!-- This is what your users will see when the form-->
+                            <!-- has successfully submitted-->
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3">
+                                    <div class="fw-bolder">Form submission successful!</div>
+                                    To activate this form, sign up at
+                                    <br />
+                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                </div>
+                            </div>
+                            <!-- Submit error message-->
+                            <!---->
+                            <!-- This is what your users will see when there is-->
+                            <!-- an error submitting the form-->
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                            <!-- Submit Button-->
+                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Location-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Location</h4>
+                        <p class="lead mb-0">
+                            uuh-u-h-uh
+                            <br />
+                            Discord?
+                        </p>
+                    </div>
+                    <!-- Footer Social Icons-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Around the Web</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Copyright Section-->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>Copyright &copy; coronado03</small></div>
+        </div>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio Modal 1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tenz</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="https://media.discordapp.net/attachments/875648756954046464/875879370923855892/TenZ.png?width=629&height=354" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">The Captain.</p>
+                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 2-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Ego</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="https://media.discordapp.net/attachments/875648756954046464/875649120554090526/ego.png?width=629&height=354" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">The Trump Card.</p>
+                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 3-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Coro</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="https://media.discordapp.net/attachments/875648756954046464/875649076148989962/Coro.png?width=629&height=354" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">T̴̢̡̧̙̞͉̺̦͉̰͍͍͚͉̥̲̞̪̣̞͖̟̟̮͍̞̰͓͎͔̤͂̓̂̿̓̃̈́̍̃̂͂̂̈́͗͊́̎̌̓́͐̿̕͘̕͝͝͝͝ͅh̷̪̥̬̭̤̪͐͂͑͌͒͗̌̀̅͛͗͛̄͆͝ë̶̢̢̡̛̖͕͍̼̖̩̖̣͚̞͚͕̣̪̣̥̪̼̟̟̺̝͇̩̠̗̟̯́͒͒̀͒̋͊̄̿͊̅̌͌̉́̈́̐̐̋̔͛̇̌̄̀̽̋̑͆̀̽̾̊̽͌̿̕͜ ̶̡̡̧̣̞̲̫̰̞̬͙͎̮͓̲̠̪̯̼̭͓͉̟̦̱̝͕̙̅͋̑̔̅̍̿̔̔̋̈́̽̒̔͌̾̾̈́͋̓͆͑̉̓͗̈́̇̆͂͗̓̂̆̐̋̚̕͜͝͝͠͝͝͝ͅͅL̴̻̠̘̠̣̫̳̈́̂͐͆͒̊̏̃̽̊͋͆̿̽̓̍̂̈͆̑̔̏̈́̾́͑̀͝ͅų̵̨̨̡̛̛̭͎̯̪̟͍̬̫̲͖̼̙̫̮̘̥̯̦̤̟̘̤̘͉̩͖̼̭͓̠̟̩̘̱̐̓̏̿̂͜͜ņ̷̢̢͙̝̭̱͖̖͕͕͔̹̖͍͍͍̲͎̰͕̝̲̗̩̻͔̠̤̗̥̲̱̞̤̫̯̩̣̤̼̤̮̀̇̿̆͆̂̉͑̌͋̊̔͜͜͜͜͠͝ͅͅå̶̢̛̰͈̪̦͈̲̯̼̭͉͓̩̞̼̣͖̺̹̬̯̈́͗̎̆̓̀̇̐̈́̇̐̂͐͑̈́̀́̈̎̐͋̎͛͌͗̊̑̒́̅͐̄́͌̓̀̕͘͘̕͜͠͠͝t̵̡̢̡̡̛̛̗̯̯̤̼͍̥͉͈̥̩̣̥̜͓̲̰͕͉̜̯͖̝̼̲͈̯̱̦͖͍̩̲͌̇̇͒͒̄̊͋̊̂̄̄̌͋̃͒͌̋̇̃̏́̔̆̀̋́͛̓̽̄͗̈́̌̐̈́̚̕͠͝ị̴̅͛̒̉̈́̈́̋̅̈́̀̿̀̄̈́̎̐̈́͌͐̐̇͌͋͆͋͐̋̒͒̈́̃̐̉͒̀̄̆͌̈̅̽̋͊̋̈́̓͘͘͝č̶̝̮̣͔̤̫͉͍̝͕̺̲̟̱̘̱̱̞̬̱̯̻̟̠̩̮̜̝̙̭̍̿̈́͌̂̈͂̃̓͗͒̓͊͌͂́͂̿͒̈̀̎͑̋̅̽̅̌̿̍̌̈̋̿͊̀̊̀͂̀̊̕̕̕͘̕̕̕.̷̨̢̡̡̧̛̮͉̖͚̮͚̙̖̞̲͈̺͙̖̻͍̟͍͖̞̣̬̙̤̠̬̳̝̣̪̱̬̮̞͙̻̻̟̫̼͎͛͑͋͊̋͒͂̏̇̄̎̍͆̄̀̋͋̀̉̊̓͋̀͛̈́̈́͊̌̉̾͌̏̈́͋̆̀̆͗̕̚̕͜͠ͅ</p>
+                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 4-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Ja-FART</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="https://media.discordapp.net/attachments/875648756954046464/875787770067570698/Jafar.png?width=567&height=567" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Jaclose?</p>
+                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 5-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Alphy</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="https://media.discordapp.net/attachments/875648756954046464/875649000995422208/Alphy.png?width=351&height=567" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Mr Wild Card / Fucking monkey guy,</p>
+                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 6-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Chey_Elodie</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="https://media.discordapp.net/attachments/875648756954046464/875993976400912414/Me_fr.png?width=629&height=354" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Writing her own story.</p>
+                                    <button class="btn btn-primary" href="#!" data-bs-dismiss="modal">
+                                        <i class="fas fa-times fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
